@@ -25,5 +25,5 @@ Once you're done with the reproduction, you can teardown the supabase instance w
 
 ## Other attempts
 
-If you roll back the supabase version to `1.49.4` in the `package.json` file. Looks like the issue was introduced in `1.49.4`.
+If you roll back the supabase version to `1.49.4` in the `package.json` file. Looks like the issue was introduced in `1.50.0`.
 The types will generate correctly, note that you don't need to teardown/setup the supabase instance between version changes.
