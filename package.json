@@ -11,8 +11,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "supabase": "^1.50.1"
+    "supabase": "1.50.1"
   }
 }

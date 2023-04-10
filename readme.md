@@ -21,7 +21,9 @@ It doesn't write anything to disk but you should see the types for the `employee
 The second attempt is `npm run types:db-url` command, this runs `supabase gen types typescript --db-url postgresql://postgres:postgres@localhost:54322/postgres`.
 Same expectation as above, doesn't attempt to write to disk but should output the types to the console.
 
+Once you're done with the reproduction, you can teardown the supabase instance with `npm run teardown`.
+
 ## Other attempts
 
-If you roll back the supabase version to `1.48.1` in the `package.json` file.
-The types will generate correctly.
+If you roll back the supabase version to `1.49.4` in the `package.json` file. Looks like the issue was introduced in `1.49.4`.
+The types will generate correctly, note that you don't need to teardown the supabase instance when you do this.
